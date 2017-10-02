@@ -1,0 +1,4 @@
+openstack/nova
+openstack/keystone
+openstack/neutron
+openstack/glance
