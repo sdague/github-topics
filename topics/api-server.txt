@@ -1,3 +1,6 @@
 openstack/nova
 openstack/swift
 openstack/neutron
+openstack/glance
+openstack/keystone
+openstack/cinder

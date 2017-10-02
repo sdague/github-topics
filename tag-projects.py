@@ -43,6 +43,10 @@ def collect_tags():
 
 
 def update_topics(project, topics):
+    # NOTE(sdague): the topics resource is only available in the
+    # experimental version of the REST v3 API. It's available as a
+    # mutation in graphql (i.e. v4 API), but that's kind of overkill
+    # given how simple the code below is.
     headers = {
         "Accept": "application/vnd.github.mercy-preview+json",
         "Authorization": "Bearer " + TOKEN
